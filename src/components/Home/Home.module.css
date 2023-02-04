@@ -1,0 +1,29 @@
+.home_container{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+    padding: 0 2em;
+}
+.home_container img{
+    width: 100%;
+    flex: 1;
+}
+.home_container div{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.home_container .home_title{
+    padding: 1.5em;
+}
+@media screen and (max-width:992px){
+    .home_container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2em;
+        padding: 0 2em;
+    }
+    .home_container .home_title{
+        padding: 1em;
+    }
+}

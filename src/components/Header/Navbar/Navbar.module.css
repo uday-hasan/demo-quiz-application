@@ -1,0 +1,104 @@
+/* Use in title */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+/* Use in link */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* variables */
+:root{
+    --main:#dcadff;
+    --second:#331b1b
+}
+
+nav{
+    background-color: var(--second);
+    box-shadow: 0 0 5px var(--main);
+    position: sticky;
+    top: 0;
+    margin-bottom: 2em;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 3em;
+    align-items: center;
+}
+.navbar_title{
+    font-family: 'Aboreto', cursive;
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: var(--main);
+}
+.navigation_style{
+    display: flex;    
+}
+.navigation_style a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+    font-family: 'Playfair Display', serif;
+    border-radius: 10px 0 10px 0;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.active_link{
+    background-color: var(--main);
+    color: var(--second);
+}
+.not_active_link{
+    color: var(--main);
+    background-color: initial;
+}
+.res_nav_icon{
+    display: none;
+}
+
+@media screen and (max-width:992px) {
+    nav{
+        background-color: var(--second);
+        box-shadow: none;
+        position: relative;
+        margin-bottom: 2em;
+        width: 100%;
+    }
+    .navbar_title{
+        font-family: 'Aboreto', cursive;
+        font-weight: bolder;
+        font-size: 1.5em;
+        color: var(--second);
+        margin: 1em 0;
+    }
+    .nav_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 1em;
+        align-items: initial;
+        position: absolute;
+        left: -500px;
+        border: solid;
+        height: 80vh;
+        z-index: 10;
+        background-color: var(--main);
+        transition: all 0.5s;
+    }
+    .res_nav_icon{
+        display: block;
+        padding: 1em;
+    }
+    .navigation_style{
+        display: flex;    
+        flex-direction: column;
+    }
+    .active_link{
+        background-color: var(--second);
+        color: var(--main);
+    }
+    .not_active_link{
+        color: var(--second);
+        background-color: initial;
+    }
+}

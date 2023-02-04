@@ -1,0 +1,97 @@
+[
+    {
+        "_id":1,
+        "question":"Who invent javascript?",
+        "answers": {
+            "answer_1":"MARK JUKERBERG",
+            "answer_2":"BRENDAN EICH",
+            "answer_3":"BILL GATES",
+            "answer_4":"STEVE JOBS"
+
+        },
+        "correctAnswer":{
+            "answer_1":false,
+            "answer_2":true,
+            "answer_3":false,
+            "answer_4":false
+
+        },
+        "explanation":"Brendan Eich was first invent Javascript."
+    },
+    {
+        "_id":2,
+        "question":"What is the full meaning of \"JSX\"?",
+        "answers": {
+            "answer_1":"JAVASCRIPT XML",
+            "answer_2":"JAVASCRIPT X-BOX",
+            "answer_3":"JAVASCRIPT XOXO",
+            "answer_4":"XML OF JAVASCRIPT"
+
+        },
+        "correctAnswer":{
+            "answer_1":true ,
+            "answer_2":false,
+            "answer_3":false,
+            "answer_4":false
+
+        },
+        "explanation":"JSX stands for Javascript XML."
+    },
+    {
+        "_id":3,
+        "question":"Which one is correct?",
+        "answers": {
+            "answer_1":"console.log(\"Hello World\")",
+            "answer_2":"printf(\"Hello World\")",
+            "answer_3":"echo(\"Hello World\")",
+            "answer_4":"cout(\"Hello World\")"
+
+        },
+        "correctAnswer":{
+            "answer_1":true ,
+            "answer_2":false,
+            "answer_3":false,
+            "answer_4":false
+
+        },
+        "explanation":"Javascript use console.log() to show output. "
+    },
+    {
+        "_id":4,
+        "question":"Which comment system used in Javascript?",
+        "answers": {
+            "answer_1":"//Comment line",
+            "answer_2":"*/Comment line",
+            "answer_3":"\\/Comment line",
+            "answer_4":"/*/Comment line*/"
+
+        },
+        "correctAnswer":{
+            "answer_1":true ,
+            "answer_2":false,
+            "answer_3":false,
+            "answer_4":false
+
+        },
+        "explanation":"In javascript, \"//\" used for single line comment and \"/**/\" used for multiple line comments"
+    },
+    {
+        "_id":5,
+        "question":"True things about \"const\" declarations",
+        "answers": {
+            "answer_1":"Can be redeclared variable.",
+            "answer_2":"Can't be reassigned.",
+            "answer_3":"Properties of object can't be changed.",
+            "answer_4":"array elements can't be changed."
+
+        },
+        "correctAnswer":{
+            "answer_1":false ,
+            "answer_2":true,
+            "answer_3":false,
+            "answer_4":false
+
+        },
+        "explanation":"In javascript, \"//\" used for single line comment and \"/**/\" used for multiple line comments"
+    }
+]

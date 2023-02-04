@@ -1,0 +1,31 @@
+:root{
+    --main:#dcadff;
+    --second:#331b1b;
+}
+.quizes_container{
+    width: 90%;
+    margin: auto;
+}
+.quizes_container form{
+    border: solid;
+    padding: 1.5em;
+    margin: 0.5em 0;
+    transition: all 0.3s;
+}
+.quizes_container form:hover{
+    box-shadow: inset 0px 0px 5px 1px var(--main);
+}
+.quiz_title{
+    margin: 0.5em 0;
+}
+.quizes_container form button{
+    border: none;
+    background-color: var(--main);
+    color: var(--second);
+    padding: 1em;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 0.4em;
+    border-radius: 10px 0 10px 0;    
+    cursor: pointer;
+}
