@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className={navigation_style}>
             <Link className={({ isActive }) => isActive ? active_link : not_active_link} to='/'>Home</Link>
             <Link className={({ isActive }) => isActive ? active_link : not_active_link} to='/quizes'>Quizes</Link>
-            <Link className={({ isActive }) => isActive ? active_link : not_active_link} to='/contacts'>Contact</Link>
+            {/* <Link className={({ isActive }) => isActive ? active_link : not_active_link} to='/contacts'>Contact</Link> */}
         </div>
     )
     const handleNavMenu = () => {

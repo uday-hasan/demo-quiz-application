@@ -10,7 +10,7 @@ function App() {
       path: '/', element: <Main />, children: [
         { path: '/', element: <Home /> },
         { path: '/home', element: <Home /> },
-        { path: '/contacts', element: <Contacts /> },
+        // { path: '/contacts', element: <Contacts /> },
         { path: '/quizes', element: <Quizes />, loader: quizLoader },
       ]
     }
