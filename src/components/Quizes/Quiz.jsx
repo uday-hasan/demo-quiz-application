@@ -4,7 +4,7 @@ import styles from './Quizes.module.css'
 
 const Quiz = ({ quiz }) => {
     const { quiz_title } = styles
-    const { question, answers, correctAnswer, _id } = quiz
+    const { question, answers, correctAnswer, _id, explanation } = quiz
     const getAnswersValues = Object.values(answers)
     const [open, setOpen] = useState(false)
     const handleClose = () => setOpen(false)
@@ -44,7 +44,7 @@ const Quiz = ({ quiz }) => {
             </div>
             <button type='submit'>Submit</button>
             {
-                open && <QuizSnackbar open={open} handleClose={handleClose} severity={severity} />
+                open && <QuizSnackbar open={open} handleClose={handleClose} severity={severity} explanation={explanation} />
             }
         </form>
     );
